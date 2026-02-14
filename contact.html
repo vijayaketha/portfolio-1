@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Vijaya Ratnam Ketha</title>
+    <meta name="description" content="Get in touch with Vijaya Ratnam Ketha.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <span class="letter">V</span>
+            <span class="letter">K</span>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Vijaya<span>.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-gear"></i>
+                </button>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" style="padding-top: 150px;">
+        <div class="container">
+            <h2 class="section-title" data-title="Get In Touch">Contact Me</h2>
+
+            <div class="chat-container scroll-reveal" style="margin-top: 50px;">
+                <!-- Chat Header -->
+                <div class="chat-header">
+                    <div class="chat-header-info">
+                        <div class="chat-bot-img">V</div>
+                        <div class="chat-bot-details">
+                            <h3>Vijaya Bot</h3>
+                            <p>Ask me a question</p>
+                        </div>
+                    </div>
+                    <div class="chat-header-actions">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+
+                <!-- Chat Messages Area -->
+                <div class="chat-messages" id="chat-messages">
+                    <div class="chat-bubble bot">
+                        Hi! I'm Vijaya Bot. I'm here to help you with any questions you might have about Vijaya's work.
+                    </div>
+                    <div class="chat-bubble bot">
+                        How can I help you today?
+                    </div>
+                </div>
+
+                <!-- Typing Indicator -->
+                <div class="typing-indicator" id="chat-typing-indicator" style="padding: 0 20px;">
+                    Vijaya Bot is typing...
+                </div>
+
+                <!-- Quick Options -->
+                <div class="chat-options" id="chat-options">
+                    <button class="chat-option-btn" data-question="Looking for your portfolio">Looking for your
+                        portfolio</button>
+                    <button class="chat-option-btn" data-question="Just saying hello!">Just saying hello!</button>
+                    <button class="chat-option-btn" data-question="Interested in hire you">We'd like to hire
+                        you</button>
+                    <button class="chat-option-btn" data-question="Contact directly">Contact directly</button>
+                </div>
+
+                <!-- Hidden form for Formspree integration -->
+                <form id="bot-form" action="https://formspree.io/f/xvgzbgkg" method="POST" style="display: none;">
+                    <input type="hidden" name="name" id="bot-name-input" value="Chatbot User">
+                    <input type="hidden" name="email" id="bot-email-input" value="no-reply@portfolio.com">
+                    <input type="hidden" name="message" id="bot-message-input">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">Vijaya<span>.</span></div>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; <span id="year"></span> Vijaya Ratnam Ketha. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
